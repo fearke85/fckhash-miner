@@ -1,0 +1,21 @@
+FCKHash (formerly fear-miner) is copyrighted software. The use terms are in the LICENSE file.
+Third-party components shipped in this package stay under their own licenses.
+
+llama.cpp and ggml (in fckhash-lib)
+  Copyright (c) the ggml authors
+  License: MIT
+  https://github.com/ggml-org/llama.cpp
+
+NVIDIA CUDA runtime libraries (cudart, cuBLAS, cuBLASLt and nvJitLink, in fckhash-lib
+or beside it)
+  Copyright (c) NVIDIA Corporation
+  Redistributed as the CUDA runtime needed to execute this miner.
+  Subject to the NVIDIA Software License Agreement for the CUDA Toolkit:
+  https://docs.nvidia.com/cuda/eula/index.html
+
+Rust crates linked into the fckhash executable
+  The executable statically includes third-party crates. Unless a crate says
+  otherwise, those crates are MIT OR Apache-2.0. Exceptions in this build
+  include libloading (ISC), blake3 (CC0-1.0 OR Apache-2.0 OR Apache-2.0 WITH
+  LLVM-exception), and secp256k1 (CC0-1.0). Each other crate keeps the license
+  published for its locked version on https://crates.io.
