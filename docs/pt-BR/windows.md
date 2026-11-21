@@ -16,8 +16,8 @@ valores da sua moeda estão na página dela: [Keryx](../../coins/keryx/README.pt
 
 ## Instalar
 
-1. Baixe o `fckhash-windows-1.0.0.zip` na
-   [página da release](https://github.com/fearke85/fckhash-miner/releases/tag/v1.0.0).
+1. Baixe o `fckhash-windows-1.0.1.zip` na
+   [página da release](https://github.com/fearke85/fckhash-miner/releases/tag/v1.0.1).
 2. Extraia numa pasta só dele, por exemplo `C:\fckhash`.
 3. Clique com o botão direito no `start-keryx.bat` (Vela: `start-vela.bat`) e escolha **Editar** (ou abra no Bloco de Notas).
 

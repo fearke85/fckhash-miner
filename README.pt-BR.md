@@ -6,7 +6,7 @@ Antes chamado fear-miner: o mesmo miner, as mesmas configurações. A FCKHash 1.
 
 Miner multi-algoritmo para GPUs NVIDIA. Pacotes para HiveOS, Linux e Windows.
 
-[![release](https://img.shields.io/badge/release-1.0.0-2b7bd6)](https://github.com/fearke85/fckhash-miner/releases/tag/v1.0.0)
+[![release](https://img.shields.io/badge/release-1.0.1-2b7bd6)](https://github.com/fearke85/fckhash-miner/releases/tag/v1.0.1)
 ![HiveOS](https://img.shields.io/badge/HiveOS-jammy-3a9a3a)
 ![Linux](https://img.shields.io/badge/Linux-glibc%202.35%2B-3a9a3a)
 ![Windows](https://img.shields.io/badge/Windows-10%20%2F%2011-3a9a3a)
@@ -30,17 +30,17 @@ as opções próprias.
 > **Keryx:** o hard fork H16 ativa em 07/11/2026. A partir daí, versões anteriores à 1.6.0 são inválidas.
 > Veja [coins/keryx](coins/keryx/README.pt-BR.md).
 
-## Download: 1.0.0 (2026-11-21)
+## Download: 1.0.1 (2026-11-21)
 
 Um pacote por plataforma. Ele minera todas as moedas da tabela acima.
 
 | Plataforma | Arquivo | Guia de instalação |
 | --- | --- | --- |
-| HiveOS | [fckhash-1.0.0.tar.gz](https://github.com/fearke85/fckhash-miner/releases/download/v1.0.0/fckhash-1.0.0.tar.gz) | [docs/pt-BR/hiveos.md](docs/pt-BR/hiveos.md) |
-| Linux | [fckhash-linux-1.0.0.tar.gz](https://github.com/fearke85/fckhash-miner/releases/download/v1.0.0/fckhash-linux-1.0.0.tar.gz) | [docs/pt-BR/linux.md](docs/pt-BR/linux.md) |
-| Windows | [fckhash-windows-1.0.0.zip](https://github.com/fearke85/fckhash-miner/releases/download/v1.0.0/fckhash-windows-1.0.0.zip) | [docs/pt-BR/windows.md](docs/pt-BR/windows.md) |
+| HiveOS | [fckhash-1.0.1.tar.gz](https://github.com/fearke85/fckhash-miner/releases/download/v1.0.1/fckhash-1.0.1.tar.gz) | [docs/pt-BR/hiveos.md](docs/pt-BR/hiveos.md) |
+| Linux | [fckhash-linux-1.0.1.tar.gz](https://github.com/fearke85/fckhash-miner/releases/download/v1.0.1/fckhash-linux-1.0.1.tar.gz) | [docs/pt-BR/linux.md](docs/pt-BR/linux.md) |
+| Windows | [fckhash-windows-1.0.1.zip](https://github.com/fearke85/fckhash-miner/releases/download/v1.0.1/fckhash-windows-1.0.1.zip) | [docs/pt-BR/windows.md](docs/pt-BR/windows.md) |
 
-O que mudou: [notas da release](https://github.com/fearke85/fckhash-miner/releases/tag/v1.0.0) ·
+O que mudou: [notas da release](https://github.com/fearke85/fckhash-miner/releases/tag/v1.0.1) ·
 [CHANGELOG](CHANGELOG.md) (em inglês). Os checksums estão na página da release.
 
 ## Como começar

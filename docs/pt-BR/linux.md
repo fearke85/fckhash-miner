@@ -16,8 +16,8 @@ valores da sua moeda estão na página dela: [Keryx](../../coins/keryx/README.pt
 ## Instalar
 
 ```
-wget https://github.com/fearke85/fckhash-miner/releases/download/v1.0.0/fckhash-linux-1.0.0.tar.gz
-tar -xzf fckhash-linux-1.0.0.tar.gz
+wget https://github.com/fearke85/fckhash-miner/releases/download/v1.0.1/fckhash-linux-1.0.1.tar.gz
+tar -xzf fckhash-linux-1.0.1.tar.gz
 cd fckhash
 nano start-keryx.sh        # Vela: start-vela.sh
 ```

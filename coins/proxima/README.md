@@ -37,7 +37,7 @@ Install the package with your platform's guide, then configure from the [Web Pan
 | Field | Value |
 | --- | --- |
 | Miner name | `fckhash` |
-| Installation URL | `https://github.com/fearke85/fckhash-miner/releases/download/v1.0.0/fckhash-1.0.0.tar.gz` |
+| Installation URL | `https://github.com/fearke85/fckhash-miner/releases/download/v1.0.1/fckhash-1.0.1.tar.gz` |
 | Hash algorithm | `proxima` (or put `-coin proxima` in Extra config arguments) |
 | Wallet and worker template | InnovLab / Suprnova: `%WAL%.%WORKER_NAME%`. AriaPool: `%WORKER_NAME%` |
 | Pool URL | `stratum+tcp://us3.innovlab.cc:19701` (or any pool from the table above) |

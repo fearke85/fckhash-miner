@@ -16,8 +16,8 @@ for your coin are on its page:
 
 ## Install
 
-1. Download `fckhash-windows-1.0.0.zip` from the
-   [release page](https://github.com/fearke85/fckhash-miner/releases/tag/v1.0.0).
+1. Download `fckhash-windows-1.0.1.zip` from the
+   [release page](https://github.com/fearke85/fckhash-miner/releases/tag/v1.0.1).
 2. Extract it to a folder of its own, for example `C:\fckhash`.
 3. Right-click `start-keryx.bat` (Vela: `start-vela.bat`), choose **Edit** (or open it in Notepad).
 

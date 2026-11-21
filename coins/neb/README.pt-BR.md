@@ -14,9 +14,9 @@ O miner mostra a velocidade em **H/s** (`kH/s` ou `MH/s`).
 
 ## Arquivo de dataset (`neb-datasets.bin`)
 
-A mineração de NEB usa o arquivo de dataset da rede, `neb-datasets.bin`, distribuído junto com a
-release oficial do node NEB (mainnet 1.0.1). Coloque o `neb-datasets.bin` em um dos caminhos abaixo
-antes de iniciar, ou passe `--dataset CAMINHO`:
+A mineração de NEB usa o arquivo de dataset da rede, `neb-datasets.bin` (16 MB). O miner baixa o
+arquivo automaticamente da release oficial do node NEB na primeira execução e o guarda na pasta de
+dados, ou você pode passar `--dataset CAMINHO`:
 
 | Plataforma | Local padrão |
 | --- | --- |
@@ -48,7 +48,7 @@ A carteira é o seu endereço de pagamento NEB no formato bech32m (`neb1...`).
 | Campo | Valor |
 | --- | --- |
 | Miner name | `fckhash` |
-| Installation URL | `https://github.com/fearke85/fckhash-miner/releases/download/v1.0.0/fckhash-1.0.0.tar.gz` |
+| Installation URL | `https://github.com/fearke85/fckhash-miner/releases/download/v1.0.1/fckhash-1.0.1.tar.gz` |
 | Hash algorithm | `neb` (ou coloque `-coin neb` em Extra config arguments) |
 | Wallet and worker template | `%WAL%.%WORKER_NAME%` |
 | Pool URL | `neb.ariabrain.com:3370` ou `stratum+tcp://neb.suprnova.cc:7804` |

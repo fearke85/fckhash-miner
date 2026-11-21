@@ -7,6 +7,16 @@ FCKHash 1.0.0 follows fear-miner 1.6.8: the same miner under a new name, with it
 numbers. What changed up to fear-miner 1.6.8 is in the
 [fear-miner changelog](https://github.com/fearke85/fear-miner/blob/main/CHANGELOG.md).
 
+## 1.0.1 (2026-11-21)
+
+- **Automatic NEB dataset download:** the first start on NEB now downloads `neb-datasets.bin`
+  (16 MB) automatically from the official NEB node release into `data/neb/` (`/var/lib/fckhash/neb/`
+  on HiveOS) with progress shown on the screen and in the web panel, and checks the file before
+  mining.
+- **First-time setup with Auto OC on Linux and Windows:** asking for root or Administrator
+  permission after the setup wizard no longer counts against the panel's startup attempts, and
+  closing the terminal or stopping the launcher while elevated stops the miner cleanly.
+
 ## 1.0.0 (2026-11-21)
 
 First release under the **FCKHash** name, following fear-miner 1.6.8. New flags: `-panel`, `-open`,
@@ -25,7 +35,7 @@ First release under the **FCKHash** name, following fear-miner 1.6.8. New flags:
     keeps what it no longer uses in `old/`, which is safe to delete once the rig mines as before.
     The Keryx escrow backup path is now `data/keryx/escrow` on Linux and Windows, and
     `/var/lib/fckhash/keryx/escrow` on HiveOS.
-- **Built-in Web Panel & Multi-Rig Hub ([panel guide](docs/en/panel.md)):** every rig serves a web
+- **Built-in Web Panel & Multi-Rig Hub ([panel guide](https://github.com/fearke85/fckhash-miner/blob/main/docs/en/panel.md)):** every rig serves a web
   panel on port `4455` (`-panel ADDRESS:PORT`, or `-panel off`), in English and Portuguese, with no
   extra program to install.
   - **5-step Setup Wizard & Control tab:** pick the coin, pool or node, wallet, worker, mining GPUs,
@@ -58,7 +68,7 @@ First release under the **FCKHash** name, following fear-miner 1.6.8. New flags:
   one does not mine. Before every start, the miner also checks its program files against the
   release's signed list and restarts itself automatically after an unexpected crash on Linux,
   Windows and HiveOS.
-- **New coin — Proxima (`-coin proxima` and `-dual proxima`, [guide](coins/proxima/README.md)):**
+- **New coin — Proxima (`-coin proxima` and `-dual proxima`, [guide](https://github.com/fearke85/fckhash-miner/blob/main/coins/proxima/README.md)):**
   - **Dual mining with Keryx on RTX 50 cards (Linux and HiveOS):** mine Proxima on the same cards at
     the same time while Keryx keeps 98% of its hashrate by default (`-dual-keep 98`). Proxima
     pauses automatically while a card answers a Keryx AI request.
@@ -68,7 +78,7 @@ First release under the **FCKHash** name, following fear-miner 1.6.8. New flags:
   - **Auto overclock for Proxima (`-auto-oc`):** supported on RTX 30 and RTX 50 cards, locking
     memory at its lowest power state (`405 MHz`, saving 14 to 47 W per card on RTX 30) and tuning
     the core lock and undervolt.
-- **New coin — NEB (`-coin neb`, [guide](coins/neb/README.md)):** pool mining on **AriaPool**
+- **New coin — NEB (`-coin neb`, [guide](https://github.com/fearke85/fckhash-miner/blob/main/coins/neb/README.md)):** pool mining on **AriaPool**
   (Europe, Asia and solo port) and **Suprnova** (Europe, US, Asia and SSL), plus solo mining on your
   own NEB node, across RTX 20, 30, 40 and 50 cards.
 - **Memory temperature protection in Auto OC:** on cards that report memory temperature (RTX 30 with
