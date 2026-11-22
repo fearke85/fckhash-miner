@@ -4,7 +4,7 @@
 
 Mining Proxima (PROX) with FCKHash. Algorithm: `proxima` (`prox` on HiveOS). Pool mining on
 **InnovLab**, **AriaPool** or **Suprnova**, solo mining as a seeker on your own `proxi node mine`
-listener, or **dual mining on the same cards as Keryx** (RTX 50).
+listener, or **dual mining on the same cards as Keryx**.
 
 The miner shows its speed in **GH/s** and its efficiency in **MH/J**.
 
@@ -37,7 +37,7 @@ Install the package with your platform's guide, then configure from the [Web Pan
 | Field | Value |
 | --- | --- |
 | Miner name | `fckhash` |
-| Installation URL | `https://github.com/fearke85/fckhash-miner/releases/download/v1.0.1/fckhash-1.0.1.tar.gz` |
+| Installation URL | `https://github.com/fearke85/fckhash-miner/releases/download/v1.0.2/fckhash-1.0.2.tar.gz` |
 | Hash algorithm | `proxima` (or put `-coin proxima` in Extra config arguments) |
 | Wallet and worker template | InnovLab / Suprnova: `%WAL%.%WORKER_NAME%`. AriaPool: `%WORKER_NAME%` |
 | Pool URL | `stratum+tcp://us3.innovlab.cc:19701` (or any pool from the table above) |
@@ -59,10 +59,11 @@ The InnovLab pool line is ready out of the box. Put your Proxima payout address 
 
 Install guides: [Linux](../../docs/en/linux.md) · [Windows](../../docs/en/windows.md).
 
-### Dual mining beside Keryx (RTX 50)
+### Dual mining beside Keryx
 
-RTX 50 cards on Linux and HiveOS can mine Proxima on the same cards while mining Keryx: Keryx keeps
-98% of its hashrate by default and Proxima uses the spare room. Turn on **Dual mining** in the
+On Linux, HiveOS and Windows (not WSL), a card can mine Proxima while it mines Keryx: Keryx keeps 98% of its hashrate
+by default and Proxima uses the spare room. The miner measures each card first and shares it only
+when the two coins do more work together than one alone. Turn on **Dual mining** in the
 [Web Panel's Control tab](../../docs/en/panel.md#control-live-manual-overclock--auto-oc) or follow
 the [Keryx dual mining setup](../keryx/README.md#proxima-on-the-same-cards).
 

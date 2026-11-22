@@ -193,7 +193,7 @@ A primeira moeda é a que o `-coin` indica; a segunda usa as flags `-dual-*`.
 | `-dual-pool URL` | A pool da segunda moeda, como `-pool` | obrigatória com `-dual` |
 | `-dual-user NOME` | O usuário da segunda moeda na pool. O `-worker` é somado a ele como à carteira, ou é o nome inteiro quando o `-dual-user` fica de fora | |
 | `-dual-password TOKEN` | A senha ou o token da segunda moeda na pool | `x` |
-| `-dual-keep 98` | A parte da hashrate, em porcento, que a primeira moeda mantém; a segunda minera o resto da placa | `98` |
+| `-dual-keep 98` | A parte da hashrate, em porcento, que a primeira moeda mantém; a segunda minera o resto da placa. Numa placa em que nenhuma divisão a mantém, a segunda fica com a divisão que mais soma trabalho; `100` deixa a placa com a primeira | `98` |
 | `-dual-sms 16` | Um número fixo de SMs de cada placa para a segunda moeda, em vez de medir | |
 
 ## Variáveis de ambiente

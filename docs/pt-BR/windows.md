@@ -16,8 +16,8 @@ valores da sua moeda estão na página dela: [Keryx](../../coins/keryx/README.pt
 
 ## Instalar
 
-1. Baixe o `fckhash-windows-1.0.1.zip` na
-   [página da release](https://github.com/fearke85/fckhash-miner/releases/tag/v1.0.1).
+1. Baixe o `fckhash-windows-1.0.2.zip` na
+   [página da release](https://github.com/fearke85/fckhash-miner/releases/tag/v1.0.2).
 2. Extraia numa pasta só dele, por exemplo `C:\fckhash`.
 3. Clique com o botão direito no `start-keryx.bat` (Vela: `start-vela.bat`) e escolha **Editar** (ou abra no Bloco de Notas).
 
@@ -50,6 +50,24 @@ Para tirar, apague o **FCKHash Panel** do menu Iniciar.
 
 Para uma janela sem a barra do navegador, instale o painel como app: abra no Edge ou no Chrome e
 aperte **Instalar**. É esse item que você fixa na barra de tarefas.
+
+## Mineração dupla
+
+Uma placa pode minerar Proxima junto com Keryx no Windows: o miner mede cada placa na primeira
+partida e só a divide quando as duas moedas fazem mais trabalho juntas do que uma sozinha. Some as
+flags `-dual*` ao `start-keryx.bat`; a [página do Keryx](../coins/keryx/README.pt-BR.md#proxima-nas-mesmas-placas)
+tem os valores da pool. Uma placa que divide fica com os clocks e a ventoinha que você der em
+`-lock-cclock`, `-cclock` e `-fan`; o auto OC a deixa em paz. `-dual-keep 100` deixa a placa só com
+o Keryx.
+
+## WSL
+
+O miner Linux roda no WSL 2, mas o CUDA do WSL não é suportado para mineração: na nossa rig (WSL
+3.0.5.0, driver NVIDIA 617.42 e 621.24) ele falha ao iniciar o CUDA, então o miner avisa e minera
+uma moeda. Atualize o WSL (`wsl --update`) e reinstale o driver Windows mais recente da NVIDIA com
+o componente **WSL**, depois reinicie; o caminho pelo App/Windows Update pode deixar as
+bibliotecas do WSL numa versão antiga. Os clocks, ventoinhas e overclock são no Windows, não dentro
+do WSL. Para duas moedas use o miner nativo do Windows acima.
 
 ## Atualizar para uma versão nova
 

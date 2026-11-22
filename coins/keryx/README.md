@@ -45,7 +45,7 @@ Install the package with your platform's guide, then use these values.
 | Field | Value |
 | --- | --- |
 | Miner name | `fckhash` |
-| Installation URL | `https://github.com/fearke85/fckhash-miner/releases/download/v1.0.1/fckhash-1.0.1.tar.gz` |
+| Installation URL | `https://github.com/fearke85/fckhash-miner/releases/download/v1.0.2/fckhash-1.0.2.tar.gz` |
 | Hash algorithm | `keryxhash` |
 | Wallet and worker template | Pool: `%WAL%.%WORKER_NAME%`. Solo: `%WAL%` |
 | Pool URL | Pool: `stratum+tcp://krx.suprnova.cc:4404`, or `stratum+ssl://krx.cryo-pool.com:5555`. Solo: `grpc://IP:PORT` of your node |
@@ -84,8 +84,10 @@ Install guides: [Linux](../../docs/en/linux.md) · [Windows](../../docs/en/windo
 
 A card can mine Proxima beside Keryx at once: Keryx keeps nearly all of its hashrate (98% by
 default) and Proxima mines the room it leaves. Add four flags to the Keryx settings; nothing else
-changes. RTX 50 cards, on Linux and HiveOS; Windows comes later. In a rig with other cards, those
-mine Keryx alone.
+changes. Linux, HiveOS and Windows (not WSL). The miner measures each card at the first start
+and shares it only when the two coins do more work together than one alone; a card where no split
+keeps 98% of Keryx takes the split that adds the most work (`-dual-keep 100` leaves it to Keryx).
+In a rig with other cards, those mine Keryx alone.
 
 | Flag | Value |
 | --- | --- |
@@ -105,8 +107,9 @@ With `start-keryx.sh`, add them to the pool line. There `-worker` names the
 rig on both pools: give only your Proxima address on InnovLab, leave `-dual-user` out on AriaPool,
 give only `ACCOUNT` on Suprnova. Standalone Proxima guide: [coins/proxima](../proxima/README.md).
 
-- **First start:** each card measures how the two coins share it, about 8 minutes, mining both
-  the whole time. The result is kept and measured again only after an update or a new overclock.
+- **First start:** each card measures how the two coins share it, about 4 to 8 minutes, mining
+  both the whole time. The result is kept and measured again only after an update or a new
+  overclock.
 - **AI requests:** Proxima stops for the length of each answer, and Keryx answers on the whole
   card as before.
 - **Screen and stats:** Proxima's hashrate and shares on the miner's screen, beside Keryx's and

@@ -16,8 +16,8 @@ for your coin are on its page:
 
 ## Install
 
-1. Download `fckhash-windows-1.0.1.zip` from the
-   [release page](https://github.com/fearke85/fckhash-miner/releases/tag/v1.0.1).
+1. Download `fckhash-windows-1.0.2.zip` from the
+   [release page](https://github.com/fearke85/fckhash-miner/releases/tag/v1.0.2).
 2. Extract it to a folder of its own, for example `C:\fckhash`.
 3. Right-click `start-keryx.bat` (Vela: `start-vela.bat`), choose **Edit** (or open it in Notepad).
 
@@ -50,6 +50,23 @@ To take it out, delete **FCKHash Panel** from the Start Menu.
 
 For a window without the browser bars, install the panel as an app: open it in Edge or Chrome and
 press **Install**. That is the entry to pin to the taskbar.
+
+## Dual mining
+
+A card can mine Proxima beside Keryx on Windows: the miner measures each card at the first start
+and shares it only when the two coins do more work together than one alone. Add the `-dual*` flags
+to `start-keryx.bat`; the [Keryx page](../coins/keryx/README.md#proxima-on-the-same-cards) has the
+pool values. A card that shares keeps the clocks and the fan you set with `-lock-cclock`,
+`-cclock` and `-fan`; auto OC leaves it alone. `-dual-keep 100` keeps a card on Keryx alone.
+
+## WSL
+
+The Linux miner runs in WSL 2, but the WSL CUDA stack is not supported for mining: on our rig
+(WSL 3.0.5.0, NVIDIA driver 617.42 and 621.24) it fails to start CUDA, so the miner says so and
+mines one coin. Update WSL (`wsl --update`) and reinstall the latest NVIDIA Windows driver with
+the **WSL** component, then reboot; the App/Windows Update path can leave the WSL libraries at an
+older version. The clocks, fans and overclock are set on Windows, not inside WSL. For two coins
+use the native Windows miner above.
 
 ## Update to a new version
 

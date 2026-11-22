@@ -24,7 +24,7 @@ Create a flight sheet with miner **Custom**:
 | Field | Value |
 | --- | --- |
 | Miner name | `fckhash` |
-| Installation URL | `https://github.com/fearke85/fckhash-miner/releases/download/v1.0.1/fckhash-1.0.1.tar.gz` |
+| Installation URL | `https://github.com/fearke85/fckhash-miner/releases/download/v1.0.2/fckhash-1.0.2.tar.gz` |
 | Hash algorithm | from your coin's page |
 | Wallet and worker template | from your coin's page |
 | Pool URL | from your coin's page |
@@ -39,15 +39,15 @@ Apply the flight sheet. The dashboard shows the hashrate once the cards are mini
 ## Install from the rig console
 
 ```
-/hive/miners/custom/custom-get https://github.com/fearke85/fckhash-miner/releases/download/v1.0.1/fckhash-1.0.1.tar.gz
+/hive/miners/custom/custom-get https://github.com/fearke85/fckhash-miner/releases/download/v1.0.2/fckhash-1.0.2.tar.gz
 ```
 
 Add `-f` to reinstall.
 
 ## Update to a new version
 
-Change the version in the Installation URL, twice: in `v1.0.1` and in
-`fckhash-1.0.1.tar.gz`. The rest of the flight sheet stays. Keeping the old URL keeps
+Change the version in the Installation URL, twice: in `v1.0.2` and in
+`fckhash-1.0.2.tar.gz`. The rest of the flight sheet stays. Keeping the old URL keeps
 installing the old version.
 
 Everything the miner keeps (models, keys, settings, the log) stays in `/var/lib/fckhash` across

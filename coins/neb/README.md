@@ -48,7 +48,7 @@ The wallet is your NEB bech32m payout address (`neb1...`).
 | Field | Value |
 | --- | --- |
 | Miner name | `fckhash` |
-| Installation URL | `https://github.com/fearke85/fckhash-miner/releases/download/v1.0.1/fckhash-1.0.1.tar.gz` |
+| Installation URL | `https://github.com/fearke85/fckhash-miner/releases/download/v1.0.2/fckhash-1.0.2.tar.gz` |
 | Hash algorithm | `neb` (or put `-coin neb` in Extra config arguments) |
 | Wallet and worker template | `%WAL%.%WORKER_NAME%` |
 | Pool URL | `neb.ariabrain.com:3370` or `stratum+tcp://neb.suprnova.cc:7804` |

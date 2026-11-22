@@ -4,7 +4,7 @@
 
 Mineração de Proxima (PROX) com o FCKHash. Algoritmo: `proxima` (`prox` no HiveOS). Mineração em
 pool na **InnovLab**, **AriaPool** ou **Suprnova**, solo como seeker no seu próprio node
-(`proxi node mine`), ou em **mineração dupla nas mesmas placas junto com o Keryx** (RTX 50).
+(`proxi node mine`), ou em **mineração dupla nas mesmas placas junto com o Keryx**.
 
 O miner mostra a velocidade em **GH/s** e a eficiência em **MH/J**.
 
@@ -38,7 +38,7 @@ Instale o pacote seguindo o guia da sua plataforma e configure pelo
 | Campo | Valor |
 | --- | --- |
 | Miner name | `fckhash` |
-| Installation URL | `https://github.com/fearke85/fckhash-miner/releases/download/v1.0.1/fckhash-1.0.1.tar.gz` |
+| Installation URL | `https://github.com/fearke85/fckhash-miner/releases/download/v1.0.2/fckhash-1.0.2.tar.gz` |
 | Hash algorithm | `proxima` (ou coloque `-coin proxima` em Extra config arguments) |
 | Wallet and worker template | InnovLab / Suprnova: `%WAL%.%WORKER_NAME%`. AriaPool: `%WORKER_NAME%` |
 | Pool URL | `stratum+tcp://us3.innovlab.cc:19701` (ou qualquer pool da tabela acima) |
@@ -60,11 +60,12 @@ A linha da pool InnovLab já vem pronta. Coloque o seu endereço Proxima em `-wa
 
 Guias de instalação: [Linux](../../docs/pt-BR/linux.md) · [Windows](../../docs/pt-BR/windows.md).
 
-### Mineração dupla junto com o Keryx (RTX 50)
+### Mineração dupla junto com o Keryx
 
-Placas RTX 50 no Linux e no HiveOS podem minerar Proxima nas mesmas placas ao mesmo tempo que o
-Keryx: o Keryx mantém 98% do seu hashrate por padrão e a Proxima usa o espaço livre da placa. Ative
-a **Mineração dupla** na [aba Controle do Painel Web](../../docs/pt-BR/panel.md#controle-overclock-manual-ao-vivo-e-auto-oc)
+No Linux, HiveOS e Windows (menos WSL), uma placa pode minerar Proxima enquanto minera Keryx: o Keryx mantém 98% do
+seu hashrate por padrão e a Proxima usa o espaço livre da placa. O miner mede cada placa antes e só
+a divide quando as duas moedas fazem mais trabalho juntas do que uma sozinha. Ative a **Mineração
+dupla** na [aba Controle do Painel Web](../../docs/pt-BR/panel.md#controle-overclock-manual-ao-vivo-e-auto-oc)
 ou veja a [configuração de mineração dupla na página do Keryx](../keryx/README.pt-BR.md#proxima-nas-mesmas-placas).
 
 ### Solo no seu próprio node Proxima (`proxi node mine`)

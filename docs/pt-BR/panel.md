@@ -34,7 +34,7 @@ Ao iniciar o FCKHash numa máquina Linux ou Windows nova (ou ao clicar em **Pass
 Controle), o assistente guia toda a configuração sem precisar editar arquivos `.sh` ou `.bat`:
 
 1. **Moeda:** escolha qualquer moeda suportada (`keryxhash`, `vela`, `proxima`, `neb`, `numen`,
-   `vearl`) e ative se quiser a **Mineração dupla** (`keryxhash` + `proxima` nas placas RTX 50).
+   `vearl`) e ative se quiser a **Mineração dupla** (`keryxhash` + `proxima` nas mesmas placas).
 2. **Pool e carteira:** alterne entre **Pool** e **Solo**, escolha uma pool conhecida com um clique
    e preencha sua carteira e nome do worker.
 3. **Placas e auto OC:** escolha quais GPUs vão minerar, selecione **Auto · Eco**, **Auto · Boost**

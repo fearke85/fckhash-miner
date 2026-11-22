@@ -7,6 +7,22 @@ FCKHash 1.0.0 follows fear-miner 1.6.8: the same miner under a new name, with it
 numbers. What changed up to fear-miner 1.6.8 is in the
 [fear-miner changelog](https://github.com/fearke85/fear-miner/blob/main/CHANGELOG.md).
 
+## 1.0.2 (2026-11-21)
+
+- **Dual mining on every supported card:** with `-dual`, every card whose driver can share it is
+  now measured and mines Proxima beside Keryx, not only RTX 50 cards: Ampere and Blackwell, on
+  Linux, HiveOS and Windows. A card where no split keeps 98% of Keryx takes the split that adds
+  the most work in total, and `-dual-keep 100` keeps it mining Keryx alone. In WSL the miner
+  mines one coin (the GPU does not start in WSL on our rig).
+- **NEB card telemetry, overclock and pool shares:** cards mining NEB now report their temperatures,
+  fan speed, power draw, clocks and checked results in the web panel and on the screen, apply manual
+  overclock settings (`-cclock`, `-lock-cclock`, `-mclock`, `-lock-mclock`, `-pl`, `-fan` and the
+  panel's overclock controls), and count shares sent to AriaPool in the accepted share counter.
+- **Coin tab for every coin in the web panel:** the sidebar's coin tab now updates to the running
+  coin's name (`NEB`, `Proxima`, `Vela`, `Numen`, `Vearl`, `Keryx`, or both in dual mode) and opens
+  that coin's live counters and per-card status table, and the overview's last-hour chart header
+  follows the live hashrate every second.
+
 ## 1.0.1 (2026-11-21)
 
 - **Automatic NEB dataset download:** the first start on NEB now downloads `neb-datasets.bin`

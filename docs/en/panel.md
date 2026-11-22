@@ -33,7 +33,7 @@ When you start FCKHash on a new Linux or Windows machine (or press **Setup wizar
 tab), the 5-step wizard sets the rig up without editing a `.sh` or `.bat` file:
 
 1. **Coin:** pick any supported coin (`keryxhash`, `vela`, `proxima`, `neb`, `numen`, `vearl`) and
-   optionally turn on **Dual mining** (`keryxhash` + `proxima` on RTX 50 cards).
+   optionally turn on **Dual mining** (`keryxhash` + `proxima` on the same cards).
 2. **Pool & wallet:** switch between **Pool** and **Solo**, pick a known pool with one click, and
    enter your payout address and worker name.
 3. **Cards & auto OC:** choose which GPUs mine, pick **Auto · Eco**, **Auto · Boost** or **Manual**

@@ -15,8 +15,8 @@ your coin are on its page: [Keryx](../../coins/keryx/README.md#start-keryxsh-lin
 ## Install
 
 ```
-wget https://github.com/fearke85/fckhash-miner/releases/download/v1.0.1/fckhash-linux-1.0.1.tar.gz
-tar -xzf fckhash-linux-1.0.1.tar.gz
+wget https://github.com/fearke85/fckhash-miner/releases/download/v1.0.2/fckhash-linux-1.0.2.tar.gz
+tar -xzf fckhash-linux-1.0.2.tar.gz
 cd fckhash
 nano start-keryx.sh        # Vela: start-vela.sh
 ```

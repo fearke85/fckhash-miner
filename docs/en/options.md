@@ -189,7 +189,7 @@ The first coin is the one `-coin` names; the second takes the `-dual-*` flags.
 | `-dual-pool URL` | The second coin's pool, as `-pool` | required with `-dual` |
 | `-dual-user NAME` | The second coin's pool username. `-worker` is added to it as to the wallet, or is the whole name when `-dual-user` is left out | |
 | `-dual-password TOKEN` | The second coin's pool password or token | `x` |
-| `-dual-keep 98` | The share of its hashrate, in percent, the first coin keeps; the second mines the rest of the card | `98` |
+| `-dual-keep 98` | The share of its hashrate, in percent, the first coin keeps; the second mines the rest of the card. A card where no split keeps it takes the split that adds the most work; `100` keeps the first coin alone | `98` |
 | `-dual-sms 16` | A fixed number of each card's SMs for the second coin, instead of measuring | |
 
 ## Environment variables

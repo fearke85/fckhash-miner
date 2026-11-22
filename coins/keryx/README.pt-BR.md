@@ -45,7 +45,7 @@ Instale o pacote pelo guia da sua plataforma e use estes valores.
 | Campo | Valor |
 | --- | --- |
 | Miner name | `fckhash` |
-| Installation URL | `https://github.com/fearke85/fckhash-miner/releases/download/v1.0.1/fckhash-1.0.1.tar.gz` |
+| Installation URL | `https://github.com/fearke85/fckhash-miner/releases/download/v1.0.2/fckhash-1.0.2.tar.gz` |
 | Hash algorithm | `keryxhash` |
 | Wallet and worker template | Pool: `%WAL%.%WORKER_NAME%`. Solo: `%WAL%` |
 | Pool URL | Pool: `stratum+tcp://krx.suprnova.cc:4404`, ou `stratum+ssl://krx.cryo-pool.com:5555`. Solo: `grpc://IP:PORTA` do seu node |
@@ -84,8 +84,10 @@ Guias de instalação: [Linux](../../docs/pt-BR/linux.md) · [Windows](../../doc
 
 Uma placa pode minerar Proxima junto com Keryx: o Keryx mantém quase toda a sua hashrate (98% por
 padrão) e a Proxima minera o espaço que sobra. Basta somar quatro flags às configurações do Keryx;
-nada mais muda. Placas RTX 50, no Linux e no HiveOS; o Windows vem depois. Num rig com outras
-placas, elas mineram só Keryx.
+nada mais muda. Linux, HiveOS e Windows (menos WSL). O miner mede cada placa na primeira partida
+e só a divide quando as duas moedas fazem mais trabalho juntas do que uma sozinha; numa placa em
+que nenhuma divisão mantém 98% do Keryx, a Proxima fica com a divisão que mais soma trabalho
+(`-dual-keep 100` deixa a placa com o Keryx). Num rig com outras placas, elas mineram só Keryx.
 
 | Flag | Valor |
 | --- | --- |
@@ -106,7 +108,7 @@ nome do rig nas duas pools: na InnovLab dê só o seu endereço Proxima, na Aria
 `-dual-user` de fora, na Suprnova dê só a `CONTA`. Guia da Proxima sozinha:
 [coins/proxima](../proxima/README.pt-BR.md).
 
-- **Primeira partida:** cada placa mede como as duas moedas a dividem, cerca de 8 minutos,
+- **Primeira partida:** cada placa mede como as duas moedas a dividem, cerca de 4 a 8 minutos,
   minerando as duas o tempo todo. O resultado fica guardado e só é medido de novo depois de uma
   atualização ou de um overclock novo.
 - **Pedidos de IA:** a Proxima para durante cada resposta, e o Keryx responde com a placa inteira,

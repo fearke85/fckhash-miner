@@ -48,7 +48,7 @@ A carteira é o seu endereço de pagamento NEB no formato bech32m (`neb1...`).
 | Campo | Valor |
 | --- | --- |
 | Miner name | `fckhash` |
-| Installation URL | `https://github.com/fearke85/fckhash-miner/releases/download/v1.0.1/fckhash-1.0.1.tar.gz` |
+| Installation URL | `https://github.com/fearke85/fckhash-miner/releases/download/v1.0.2/fckhash-1.0.2.tar.gz` |
 | Hash algorithm | `neb` (ou coloque `-coin neb` em Extra config arguments) |
 | Wallet and worker template | `%WAL%.%WORKER_NAME%` |
 | Pool URL | `neb.ariabrain.com:3370` ou `stratum+tcp://neb.suprnova.cc:7804` |

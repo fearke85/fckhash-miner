@@ -6,7 +6,7 @@ Formerly fear-miner: same miner, same settings. FCKHash 1.0.0 follows fear-miner
 
 Multi-algorithm NVIDIA GPU miner. Packages for HiveOS, Linux and Windows.
 
-[![release](https://img.shields.io/badge/release-1.0.1-2b7bd6)](https://github.com/fearke85/fckhash-miner/releases/tag/v1.0.1)
+[![release](https://img.shields.io/badge/release-1.0.2-2b7bd6)](https://github.com/fearke85/fckhash-miner/releases/tag/v1.0.2)
 ![HiveOS](https://img.shields.io/badge/HiveOS-jammy-3a9a3a)
 ![Linux](https://img.shields.io/badge/Linux-glibc%202.35%2B-3a9a3a)
 ![Windows](https://img.shields.io/badge/Windows-10%20%2F%2011-3a9a3a)
@@ -21,7 +21,7 @@ options.
 | --- | --- | --- | --- |
 | Keryx | `keryxhash` | NVIDIA Turing or newer, 8 GB or more | [coins/keryx](coins/keryx/README.md) |
 | Vela | `vela` | NVIDIA Turing or newer | [coins/vela](coins/vela/README.md) |
-| Proxima | `proxima` | NVIDIA Turing or newer (standalone or dual with Keryx on RTX 50) | [coins/proxima](coins/proxima/README.md) |
+| Proxima | `proxima` | NVIDIA Turing or newer (standalone or dual with Keryx) | [coins/proxima](coins/proxima/README.md) |
 | NEB | `neb` | NVIDIA Turing or newer | [coins/neb](coins/neb/README.md) |
 | Numen | `numen` | NVIDIA Turing or newer | [coins/numen](coins/numen/README.md) |
 | Vearl (testnet) | `vearl` | NVIDIA Turing with tensor cores, or newer | [coins/vearl](coins/vearl/README.md) |
@@ -30,17 +30,17 @@ options.
 > **Keryx:** the H16 hard fork activates on 2026-11-07. From then on versions before 1.6.0 are invalid.
 > See [coins/keryx](coins/keryx/README.md).
 
-## Download: 1.0.1 (2026-11-21)
+## Download: 1.0.2 (2026-11-22)
 
 One package per platform. It mines every coin in the table above.
 
 | Platform | File | Install guide |
 | --- | --- | --- |
-| HiveOS | [fckhash-1.0.1.tar.gz](https://github.com/fearke85/fckhash-miner/releases/download/v1.0.1/fckhash-1.0.1.tar.gz) | [docs/en/hiveos.md](docs/en/hiveos.md) |
-| Linux | [fckhash-linux-1.0.1.tar.gz](https://github.com/fearke85/fckhash-miner/releases/download/v1.0.1/fckhash-linux-1.0.1.tar.gz) | [docs/en/linux.md](docs/en/linux.md) |
-| Windows | [fckhash-windows-1.0.1.zip](https://github.com/fearke85/fckhash-miner/releases/download/v1.0.1/fckhash-windows-1.0.1.zip) | [docs/en/windows.md](docs/en/windows.md) |
+| HiveOS | [fckhash-1.0.2.tar.gz](https://github.com/fearke85/fckhash-miner/releases/download/v1.0.2/fckhash-1.0.2.tar.gz) | [docs/en/hiveos.md](docs/en/hiveos.md) |
+| Linux | [fckhash-linux-1.0.2.tar.gz](https://github.com/fearke85/fckhash-miner/releases/download/v1.0.2/fckhash-linux-1.0.2.tar.gz) | [docs/en/linux.md](docs/en/linux.md) |
+| Windows | [fckhash-windows-1.0.2.zip](https://github.com/fearke85/fckhash-miner/releases/download/v1.0.2/fckhash-windows-1.0.2.zip) | [docs/en/windows.md](docs/en/windows.md) |
 
-What changed: [release notes](https://github.com/fearke85/fckhash-miner/releases/tag/v1.0.1) ·
+What changed: [release notes](https://github.com/fearke85/fckhash-miner/releases/tag/v1.0.2) ·
 [CHANGELOG](CHANGELOG.md). Checksums are on the release page.
 
 ## Getting started
